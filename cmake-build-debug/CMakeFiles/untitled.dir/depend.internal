@@ -29,12 +29,12 @@ CMakeFiles/untitled.dir/NumericMethod.cpp.o
  /home/nikita/untitled/Grid.h
  /home/nikita/untitled/NumericMethod.cpp
  /home/nikita/untitled/NumericMethod.h
-CMakeFiles/untitled.dir/RungeKuta.cpp.o
+CMakeFiles/untitled.dir/RungeKutta.cpp.o
  /home/nikita/untitled/Equation.h
  /home/nikita/untitled/Grid.h
  /home/nikita/untitled/NumericMethod.h
- /home/nikita/untitled/RungeKuta.cpp
- /home/nikita/untitled/RungeKuta.h
+ /home/nikita/untitled/RungeKutta.cpp
+ /home/nikita/untitled/RungeKutta.h
 CMakeFiles/untitled.dir/main.cpp.o
  /home/nikita/untitled/Equation.h
  /home/nikita/untitled/Euler.h
@@ -42,7 +42,7 @@ CMakeFiles/untitled.dir/main.cpp.o
  /home/nikita/untitled/Grid.h
  /home/nikita/untitled/ImprovedEuler.h
  /home/nikita/untitled/NumericMethod.h
- /home/nikita/untitled/RungeKuta.h
+ /home/nikita/untitled/RungeKutta.h
  /home/nikita/untitled/main.cpp
  /home/nikita/untitled/mainwindow.h
  /usr/include/qt/QtCharts/QAbstractAxis
@@ -601,6 +601,13 @@ CMakeFiles/untitled.dir/main.cpp.o
  /usr/include/qt/QtWidgets/qwidgetaction.h
  /usr/include/qt/QtWidgets/qwizard.h
 CMakeFiles/untitled.dir/mainwindow.cpp.o
+ /home/nikita/untitled/Equation.h
+ /home/nikita/untitled/Euler.h
+ /home/nikita/untitled/ExactSolution.h
+ /home/nikita/untitled/Grid.h
+ /home/nikita/untitled/ImprovedEuler.h
+ /home/nikita/untitled/NumericMethod.h
+ /home/nikita/untitled/RungeKutta.h
  /home/nikita/untitled/mainwindow.cpp
  /home/nikita/untitled/mainwindow.h
  /usr/include/qt/QtCharts/QAbstractAxis
@@ -1165,6 +1172,13 @@ CMakeFiles/untitled.dir/mainwindow.cpp.o
  /usr/include/qt/QtWidgets/qwizard.h
  untitled_autogen/include/ui_mainwindow.h
 CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o
+ /home/nikita/untitled/Equation.h
+ /home/nikita/untitled/Euler.h
+ /home/nikita/untitled/ExactSolution.h
+ /home/nikita/untitled/Grid.h
+ /home/nikita/untitled/ImprovedEuler.h
+ /home/nikita/untitled/NumericMethod.h
+ /home/nikita/untitled/RungeKutta.h
  /home/nikita/untitled/cmake-build-debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp
  /home/nikita/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp
  /home/nikita/untitled/mainwindow.h

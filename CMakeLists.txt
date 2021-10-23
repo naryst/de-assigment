@@ -19,7 +19,7 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        Grid.cpp Grid.h Equation.cpp Equation.h ExactSolution.cpp ExactSolution.h NumericMethod.cpp NumericMethod.h Euler.cpp Euler.h ImprovedEuler.cpp ImprovedEuler.h RungeKuta.cpp RungeKuta.h)
+        Grid.cpp Grid.h Equation.cpp Equation.h ExactSolution.cpp ExactSolution.h NumericMethod.cpp NumericMethod.h Euler.cpp Euler.h ImprovedEuler.cpp ImprovedEuler.h RungeKutta.cpp RungeKutta.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(untitled

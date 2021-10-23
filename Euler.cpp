@@ -7,6 +7,8 @@
 Euler::Euler(double x0, double y0, double X, double h) : NumericMethod(x0, y0, X, h) {}
 
 void Euler::GetSolutions(){
+    xs.clear();
+    ys.clear();
     xs.push_back(x0);
     ys.push_back(y0);
     double currentX = x0 + h;

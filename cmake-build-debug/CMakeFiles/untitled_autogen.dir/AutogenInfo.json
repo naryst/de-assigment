@@ -135,9 +135,9 @@
 			null
 		],
 		[
-			"/home/nikita/untitled/RungeKuta.h",
+			"/home/nikita/untitled/RungeKutta.h",
 			"MU",
-			"EWIEGA46WW/moc_RungeKuta.cpp",
+			"EWIEGA46WW/moc_RungeKutta.cpp",
 			null
 		],
 		[
@@ -206,7 +206,7 @@
 		[ "/home/nikita/untitled/Grid.cpp", "MU", null ],
 		[ "/home/nikita/untitled/ImprovedEuler.cpp", "MU", null ],
 		[ "/home/nikita/untitled/NumericMethod.cpp", "MU", null ],
-		[ "/home/nikita/untitled/RungeKuta.cpp", "MU", null ],
+		[ "/home/nikita/untitled/RungeKutta.cpp", "MU", null ],
 		[ "/home/nikita/untitled/main.cpp", "MU", null ],
 		[ "/home/nikita/untitled/mainwindow.cpp", "MU", null ]
 	],

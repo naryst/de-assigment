@@ -1,5 +1,12 @@
 /home/nikita/untitled/cmake-build-debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/nikita/untitled/mainwindow.h \
   /home/nikita/untitled/cmake-build-debug/untitled_autogen/moc_predefs.h \
+  /home/nikita/untitled/Equation.h \
+  /home/nikita/untitled/Euler.h \
+  /home/nikita/untitled/ExactSolution.h \
+  /home/nikita/untitled/Grid.h \
+  /home/nikita/untitled/ImprovedEuler.h \
+  /home/nikita/untitled/NumericMethod.h \
+  /home/nikita/untitled/RungeKutta.h \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

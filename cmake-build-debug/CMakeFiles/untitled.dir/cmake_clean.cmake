@@ -8,7 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/Grid.cpp.o"
   "CMakeFiles/untitled.dir/ImprovedEuler.cpp.o"
   "CMakeFiles/untitled.dir/NumericMethod.cpp.o"
-  "CMakeFiles/untitled.dir/RungeKuta.cpp.o"
+  "CMakeFiles/untitled.dir/RungeKutta.cpp.o"
   "CMakeFiles/untitled.dir/main.cpp.o"
   "CMakeFiles/untitled.dir/mainwindow.cpp.o"
   "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o"

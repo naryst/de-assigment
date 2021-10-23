@@ -183,18 +183,18 @@ CMakeFiles/untitled.dir/ImprovedEuler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/ImprovedEuler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikita/untitled/ImprovedEuler.cpp -o CMakeFiles/untitled.dir/ImprovedEuler.cpp.s
 
-CMakeFiles/untitled.dir/RungeKuta.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/RungeKuta.cpp.o: ../RungeKuta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikita/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/RungeKuta.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/RungeKuta.cpp.o -c /home/nikita/untitled/RungeKuta.cpp
+CMakeFiles/untitled.dir/RungeKutta.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/RungeKutta.cpp.o: ../RungeKutta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikita/untitled/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/RungeKutta.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/RungeKutta.cpp.o -c /home/nikita/untitled/RungeKutta.cpp
 
-CMakeFiles/untitled.dir/RungeKuta.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/RungeKuta.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikita/untitled/RungeKuta.cpp > CMakeFiles/untitled.dir/RungeKuta.cpp.i
+CMakeFiles/untitled.dir/RungeKutta.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/RungeKutta.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikita/untitled/RungeKutta.cpp > CMakeFiles/untitled.dir/RungeKutta.cpp.i
 
-CMakeFiles/untitled.dir/RungeKuta.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/RungeKuta.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikita/untitled/RungeKuta.cpp -o CMakeFiles/untitled.dir/RungeKuta.cpp.s
+CMakeFiles/untitled.dir/RungeKutta.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/RungeKutta.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikita/untitled/RungeKutta.cpp -o CMakeFiles/untitled.dir/RungeKutta.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
@@ -207,7 +207,7 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/NumericMethod.cpp.o" \
 "CMakeFiles/untitled.dir/Euler.cpp.o" \
 "CMakeFiles/untitled.dir/ImprovedEuler.cpp.o" \
-"CMakeFiles/untitled.dir/RungeKuta.cpp.o"
+"CMakeFiles/untitled.dir/RungeKutta.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -221,7 +221,7 @@ untitled: CMakeFiles/untitled.dir/ExactSolution.cpp.o
 untitled: CMakeFiles/untitled.dir/NumericMethod.cpp.o
 untitled: CMakeFiles/untitled.dir/Euler.cpp.o
 untitled: CMakeFiles/untitled.dir/ImprovedEuler.cpp.o
-untitled: CMakeFiles/untitled.dir/RungeKuta.cpp.o
+untitled: CMakeFiles/untitled.dir/RungeKutta.cpp.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: /usr/lib/libQt5Charts.so.5.15.2
 untitled: /usr/lib/libQt5Widgets.so.5.15.2

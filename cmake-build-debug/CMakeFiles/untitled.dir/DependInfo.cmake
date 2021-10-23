@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nikita/untitled/Grid.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Grid.cpp.o"
   "/home/nikita/untitled/ImprovedEuler.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/ImprovedEuler.cpp.o"
   "/home/nikita/untitled/NumericMethod.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/NumericMethod.cpp.o"
-  "/home/nikita/untitled/RungeKuta.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/RungeKuta.cpp.o"
+  "/home/nikita/untitled/RungeKutta.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/RungeKutta.cpp.o"
   "/home/nikita/untitled/main.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/main.cpp.o"
   "/home/nikita/untitled/mainwindow.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/mainwindow.cpp.o"
   "/home/nikita/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp" "/home/nikita/untitled/cmake-build-debug/CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o"

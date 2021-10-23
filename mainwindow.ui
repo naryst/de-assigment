@@ -20,37 +20,45 @@
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_3"/>
+      <item row="4" column="0">
+       <widget class="QLabel" name="N">
+        <property name="text">
+         <string>    N</string>
+        </property>
+       </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="y0">
         <property name="text">
-         <string>TextLabel</string>
+         <string>     y0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="XData">
+        <property name="text">
+         <string>3</string>
         </property>
        </widget>
       </item>
       <item row="0" column="2">
-       <widget class="QLineEdit" name="lineEdit"/>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="lineEdit_2"/>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_3">
+       <widget class="QLineEdit" name="x0Data">
         <property name="text">
-         <string>TextLabel</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
+      <item row="2" column="4">
+       <widget class="QCheckBox" name="ExactShow">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Exact</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item row="6" column="0">
        <spacer name="verticalSpacer">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
@@ -66,14 +74,62 @@
         </property>
        </spacer>
       </item>
-      <item row="0" column="4">
-       <widget class="QPushButton" name="pushButton">
+      <item row="0" column="0">
+       <widget class="QLabel" name="x0">
         <property name="text">
-         <string>PushButton</string>
+         <string>     x0</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="3">
+      <item row="0" column="4">
+       <widget class="QPushButton" name="Sulution_creator">
+        <property name="text">
+         <string>Calculate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QCheckBox" name="EulerShow">
+        <property name="text">
+         <string>Euler</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="X">
+        <property name="text">
+         <string>     X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="NData">
+        <property name="text">
+         <string>12</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="y0Data">
+        <property name="text">
+         <string>0.707</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QCheckBox" name="ImprovedEulerShow">
+        <property name="text">
+         <string>Improved Euler</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -85,6 +141,16 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="5" column="4">
+       <widget class="QCheckBox" name="RungeKuttaShow">
+        <property name="text">
+         <string>Runge Kutta</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

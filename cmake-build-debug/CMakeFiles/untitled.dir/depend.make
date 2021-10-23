@@ -29,12 +29,12 @@ CMakeFiles/untitled.dir/NumericMethod.cpp.o: \
  ../Grid.h \
  ../NumericMethod.cpp \
  ../NumericMethod.h
-CMakeFiles/untitled.dir/RungeKuta.cpp.o: \
+CMakeFiles/untitled.dir/RungeKutta.cpp.o: \
  ../Equation.h \
  ../Grid.h \
  ../NumericMethod.h \
- ../RungeKuta.cpp \
- ../RungeKuta.h
+ ../RungeKutta.cpp \
+ ../RungeKutta.h
 CMakeFiles/untitled.dir/main.cpp.o: \
  ../Equation.h \
  ../Euler.h \
@@ -42,7 +42,7 @@ CMakeFiles/untitled.dir/main.cpp.o: \
  ../Grid.h \
  ../ImprovedEuler.h \
  ../NumericMethod.h \
- ../RungeKuta.h \
+ ../RungeKutta.h \
  ../main.cpp \
  ../mainwindow.h \
  /usr/include/qt/QtCharts/QAbstractAxis \
@@ -601,6 +601,13 @@ CMakeFiles/untitled.dir/main.cpp.o: \
  /usr/include/qt/QtWidgets/qwidgetaction.h \
  /usr/include/qt/QtWidgets/qwizard.h
 CMakeFiles/untitled.dir/mainwindow.cpp.o: \
+ ../Equation.h \
+ ../Euler.h \
+ ../ExactSolution.h \
+ ../Grid.h \
+ ../ImprovedEuler.h \
+ ../NumericMethod.h \
+ ../RungeKutta.h \
  ../mainwindow.cpp \
  ../mainwindow.h \
  /usr/include/qt/QtCharts/QAbstractAxis \
@@ -1165,6 +1172,13 @@ CMakeFiles/untitled.dir/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/qwizard.h \
  untitled_autogen/include/ui_mainwindow.h
 CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o: \
+ ../Equation.h \
+ ../Euler.h \
+ ../ExactSolution.h \
+ ../Grid.h \
+ ../ImprovedEuler.h \
+ ../NumericMethod.h \
+ ../RungeKutta.h \
  untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp \
  untitled_autogen/mocs_compilation.cpp \
  ../mainwindow.h \

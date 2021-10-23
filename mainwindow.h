@@ -8,6 +8,11 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+#include "Euler.h"
+#include "ExactSolution.h"
+#include "ImprovedEuler.h"
+#include "RungeKutta.h"
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -15,13 +20,20 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void stateCheck();
     QLineSeries *ExactGraph = new QLineSeries();
     QLineSeries *EulerGraph = new QLineSeries();
+    QLineSeries *ImprovedEulerGraph = new QLineSeries();
+    QLineSeries *RungeKuttaGraph = new QLineSeries();
     QChart *chart = new QChart();
     QChartView *chartView;
+    Euler *euler;
+    ExactSolution *exact;
+    ImprovedEuler *improvedEuler;
+    RungeKutta *rungeKutta;
 
 private slots:
-    void on_pushButton_clicked();
+    void on_Sulution_creator_clicked();
 
 private:
     Ui::MainWindow *ui;

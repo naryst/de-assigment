@@ -154,10 +154,10 @@
 		<Unit filename="/home/nikita/untitled/NumericMethod.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/home/nikita/untitled/RungeKuta.cpp">
+		<Unit filename="/home/nikita/untitled/RungeKutta.cpp">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/home/nikita/untitled/RungeKuta.h">
+		<Unit filename="/home/nikita/untitled/RungeKutta.h">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/home/nikita/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp">

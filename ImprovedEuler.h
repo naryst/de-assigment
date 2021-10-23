@@ -7,7 +7,9 @@
 #include "NumericMethod.h"
 
 class ImprovedEuler : public NumericMethod{
-
+public:
+    ImprovedEuler(double x0, double y0, double X, double h);
+    void GetSolutions();
 };
 
 

@@ -7,6 +7,8 @@
 
 
 void ExactSolution::GetSolutions() {
+    xs.clear();
+    ys.clear();
     xs.push_back(x0);
     ys.push_back(y0);
     double currentX = x0+h;
