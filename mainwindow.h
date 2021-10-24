@@ -21,6 +21,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void stateCheck();
+    void getLineData();
+    void initializeMethod();
+    void numericSolutions();
+    void addSeriesToChart();
+    void addSeriesToChartLTE();
+    double x0, y0, X, h;
     QLineSeries *ExactGraph = new QLineSeries();
     QLineSeries *EulerGraph = new QLineSeries();
     QLineSeries *ImprovedEulerGraph = new QLineSeries();
@@ -33,7 +39,11 @@ public:
     RungeKutta *rungeKutta;
 
 private slots:
-    void on_Sulution_creator_clicked();
+    void on_Solution_creator_clicked();
+
+    void on_LTE_graph_clicked();
+
+    void on_GTE_graph_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -16,25 +16,111 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QWidget" name="widget" native="true"/>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="widget"/>
+      </item>
+     </layout>
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="4" column="0">
-       <widget class="QLabel" name="N">
+      <item row="2" column="4">
+       <widget class="QPushButton" name="GTE_graph">
         <property name="text">
-         <string>    N</string>
+         <string>GTE</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="1" column="0">
        <widget class="QLabel" name="y0">
         <property name="text">
          <string>     y0</string>
         </property>
        </widget>
       </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>  n0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="N">
+        <property name="text">
+         <string>    N</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QCheckBox" name="EulerShow">
+        <property name="text">
+         <string>Euler</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QCheckBox" name="ExactShow">
+        <property name="text">
+         <string>Exact</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="y0Data">
+        <property name="text">
+         <string>0.707</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QCheckBox" name="RungeKuttaShow">
+        <property name="text">
+         <string>Runge Kutta</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="LTE_graph">
+        <property name="text">
+         <string>lLE</string>
+        </property>
+       </widget>
+      </item>
       <item row="3" column="2">
+       <widget class="QLineEdit" name="NData">
+        <property name="text">
+         <string>12</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
        <widget class="QLineEdit" name="XData">
         <property name="text">
          <string>3</string>
@@ -48,32 +134,6 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="4">
-       <widget class="QCheckBox" name="ExactShow">
-        <property name="text">
-         <string>Exact</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Preferred</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="0" column="0">
        <widget class="QLabel" name="x0">
         <property name="text">
@@ -81,45 +141,7 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="4">
-       <widget class="QPushButton" name="Sulution_creator">
-        <property name="text">
-         <string>Calculate</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="4">
-       <widget class="QCheckBox" name="EulerShow">
-        <property name="text">
-         <string>Euler</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="X">
-        <property name="text">
-         <string>     X</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="2">
-       <widget class="QLineEdit" name="NData">
-        <property name="text">
-         <string>12</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="y0Data">
-        <property name="text">
-         <string>0.707</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="4">
+      <item row="5" column="4">
        <widget class="QCheckBox" name="ImprovedEulerShow">
         <property name="text">
          <string>Improved Euler</string>
@@ -129,7 +151,14 @@
         </property>
        </widget>
       </item>
-      <item row="6" column="3">
+      <item row="2" column="0">
+       <widget class="QLabel" name="X">
+        <property name="text">
+         <string>     X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -142,13 +171,17 @@
         </property>
        </spacer>
       </item>
-      <item row="5" column="4">
-       <widget class="QCheckBox" name="RungeKuttaShow">
+      <item row="0" column="4">
+       <widget class="QPushButton" name="Solution_creator">
         <property name="text">
-         <string>Runge Kutta</string>
+         <string>Calculate</string>
         </property>
-        <property name="checked">
-         <bool>true</bool>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="n0Data">
+        <property name="text">
+         <string>5</string>
         </property>
        </widget>
       </item>

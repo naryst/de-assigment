@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     chartView = new QChartView(chart);
-    chartView->resize(900, 550);
+    chartView->resize(900, 700);
     layout()->addWidget(this->chartView);
 
 //    EulerGraph = new QLineSeries();
@@ -55,25 +55,49 @@ void MainWindow::stateCheck(){
     }
 }
 
-void MainWindow::on_Sulution_creator_clicked()
-{
-    chart->removeAllSeries();
-    stateCheck();
-    double x0, y0, X, h;
+void MainWindow::getLineData(){
     x0 = ui->x0Data->text().toDouble();
     y0 = ui->y0Data->text().toDouble();
     X = ui->XData->text().toDouble();
     h = (X - x0)/(ui->NData->text().toDouble());
+}
 
+void MainWindow::initializeMethod(){
     exact = new ExactSolution(x0, y0, X, h);
     euler = new Euler(x0, y0, X, h);
     improvedEuler = new ImprovedEuler(x0, y0, X, h);
     rungeKutta = new RungeKutta(x0, y0, X, h);
+}
 
+void MainWindow::numericSolutions(){
     exact->GetSolutions();
     euler->GetSolutions();
     improvedEuler->GetSolutions();
     rungeKutta->GetSolutions();
+}
+
+void MainWindow::addSeriesToChart(){
+    chart->addSeries(ExactGraph);
+    chart->addSeries(EulerGraph);
+    chart->addSeries(ImprovedEulerGraph);
+    chart->addSeries(RungeKuttaGraph);
+}
+
+void MainWindow::addSeriesToChartLTE(){
+    chart->addSeries(EulerGraph);
+    chart->addSeries(ImprovedEulerGraph);
+    chart->addSeries(RungeKuttaGraph);
+}
+
+
+
+void MainWindow::on_Solution_creator_clicked()
+{
+    chart->removeAllSeries();
+    stateCheck();
+    getLineData();
+    initializeMethod();
+    numericSolutions();
 
     for (int i = 0; i < exact->ys.size(); i++) {
         ExactGraph->append(exact->xs[i], exact->ys[i]);
@@ -82,12 +106,9 @@ void MainWindow::on_Sulution_creator_clicked()
         RungeKuttaGraph->append(rungeKutta->xs[i], rungeKutta->ys[i]);
     }
 
-    if(ExactGraph->chart() != chart) chart->addSeries(ExactGraph);
-    if(EulerGraph->chart() != chart) chart->addSeries(EulerGraph);
-    if(ImprovedEulerGraph->chart() != chart) chart->addSeries(ImprovedEulerGraph);
-    if(RungeKuttaGraph->chart() != chart) chart->addSeries(RungeKuttaGraph);
-
+    addSeriesToChart();
     chart->createDefaultAxes();
+
     ExactGraph->setName("Exact Solution");
     EulerGraph->setName("Euler method Solution");
     ImprovedEulerGraph->setName("Improved Euler method solution");
@@ -98,5 +119,78 @@ void MainWindow::on_Sulution_creator_clicked()
     ImprovedEulerGraph = new QLineSeries();
     RungeKuttaGraph = new QLineSeries();
 }
+
+
+
+void MainWindow::on_LTE_graph_clicked()
+{
+    chart->removeAllSeries();
+    stateCheck();
+    getLineData();
+    initializeMethod();
+    numericSolutions();
+
+    for (int i = 0; i < exact->ys.size(); i++) {
+        EulerGraph->append(euler->xs[i], abs(exact->ys[i] - euler->ys[i]));
+        ImprovedEulerGraph->append(improvedEuler->xs[i], abs(exact->ys[i] - improvedEuler->ys[i]));
+        RungeKuttaGraph->append(rungeKutta->xs[i], abs(exact->ys[i] - rungeKutta->ys[i]));
+    }
+
+    addSeriesToChartLTE();
+
+    chart->createDefaultAxes();
+
+    EulerGraph->setName("Euler method LTE");
+    ImprovedEulerGraph->setName("Improved Euler method LTE");
+    RungeKuttaGraph->setName("Runge Kutta LTE");
+
+    EulerGraph = new QLineSeries();
+    ImprovedEulerGraph = new QLineSeries();
+    RungeKuttaGraph = new QLineSeries();
+
+}
+
+
+void MainWindow::on_GTE_graph_clicked()
+{
+    chart->removeAllSeries();
+    stateCheck();
+    getLineData();
+
+    int maxSteps = ui->NData->text().toInt();
+    int nStart = ui->n0Data->text().toInt();
+
+    for(int n = nStart; n <= maxSteps; n++){
+
+        h = (X - x0)/n;
+        initializeMethod();
+        numericSolutions();
+        double eulerMax = 0, improvedEulerMax = 0, rungeKuttaMax = 0;
+
+        for(int i = 0; i < exact->ys.size(); i++){
+            eulerMax = max(eulerMax, abs(exact->ys[i] - euler->ys[i]));
+            improvedEulerMax = max(improvedEulerMax, abs(exact->ys[i] - improvedEuler->ys[i]));
+            rungeKuttaMax = max(rungeKuttaMax, abs(exact->ys[i] - rungeKutta->ys[i]));
+        }
+
+        EulerGraph->append(n, eulerMax);
+        ImprovedEulerGraph->append(n, improvedEulerMax);
+        RungeKuttaGraph->append(n, rungeKuttaMax);
+    }
+
+    addSeriesToChartLTE();
+
+    chart->createDefaultAxes();
+    EulerGraph->setName("Euler method GTE");
+    ImprovedEulerGraph->setName("Improved Euler method GTE");
+    RungeKuttaGraph->setName("Runge Kutta GTE");
+
+    EulerGraph = new QLineSeries();
+    ImprovedEulerGraph = new QLineSeries();
+    RungeKuttaGraph = new QLineSeries();
+}
+
+
+
 
 
