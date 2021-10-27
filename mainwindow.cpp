@@ -105,7 +105,6 @@ void MainWindow::on_Solution_creator_clicked()
         ImprovedEulerGraph->append(improvedEuler->xs[i], improvedEuler->ys[i]);
         RungeKuttaGraph->append(rungeKutta->xs[i], rungeKutta->ys[i]);
     }
-
     addSeriesToChart();
     chart->createDefaultAxes();
 
